@@ -1,45 +1,91 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-body{
-    .container{
+body {
+    .container {
         width: 100%;
         min-height: 100vh;
         background: linear-gradient(135deg, #4203a9, #90bafc);
         padding: 10px;
         color: #fff;
 
-        .calculator{
+        .calculator {
             width: 100%;
             max-width: 600px;
             margin-left: 10%;
             margin-top: 10%;
 
-            h1{
+            @media screen and (max-width: 768px) {
+                max-width: 70%;
+                margin: 10% auto;
+            }
+
+            h1 {
                 font-size: 50px;
                 letter-spacing: 0.1rem;
 
-                .js{
+                @media screen and (max-width: 768px) {
+                    text-align: center;
+                }
+
+                @media screen and (max-width: 555px) {
+                    font-size: 30px;
+                    letter-spacing: 0.5rem;
+                }
+
+                @media screen and (max-width: 485px){
+                    font-size: 22px;
+                }
+                
+                @media screen and (max-width: 410px){
+                    font-size: 18px;
+                }
+
+
+
+                .js {
                     color: #EFD81D;
                     letter-spacing: 0.6rem;
                     font-size: 60px;
+
+                    @media screen and (max-width: 555px) {
+                        font-size: 35px;
+                        letter-spacing: 0.3rem;
+                    }
+
+                    @media screen and (max-width: 485px){
+                        font-size: 25px;
+                    }
+                    
+                    @media screen and (max-width: 410px){
+                        font-size: 20px;
+                    }
                 }
             }
 
-            .input-box{
+            .input-box {
                 margin: 40px 0;
                 padding: 35px;
                 border-radius: 10px;
                 background-color: rgba(255, 255, 255, 0.3);
                 display: flex;
                 align-items: center;
-                justify-content: start;
+                justify-content: center;
 
-                input{
+                @media screen and (max-width: 768px) {
+                    justify-content: center;
+                }
+
+                @media screen and (max-width: 555px) {
+                    padding: 20px;
+                    flex-direction: column;
+                }
+
+                input {
                     flex: 1;
                     margin-right: 20px;
                     padding: 14px 20px;
@@ -49,7 +95,13 @@ body{
                     border-radius: 5px;
                     position: relative;
 
-                    &::-webkit-calendar-picker-indicator{
+                    @media screen and (max-width: 555px) {
+                        font-size: 15px;
+                        margin: 10px 5px;
+                        width: 100%;
+                    }
+
+                    &::-webkit-calendar-picker-indicator {
                         position: absolute;
                         top: 0;
                         bottom: 0;
@@ -63,7 +115,7 @@ body{
                     }
                 }
 
-                button{
+                button {
                     background: #EFD81D;
                     border: 0;
                     outline: 0;
@@ -74,16 +126,25 @@ body{
                     color: #333;
                     cursor: pointer;
 
-                    &:hover{
+                    &:hover {
                         background: #f1e26d;
                     }
+
+                    @media screen and (max-width: 555px){
+                        width: 100%;
+                    }
+
+                    
                 }
             }
 
-            h3{
+            h3 {
                 font-weight: 500;
+
+                @media screen and (max-width: 768px) {
+                    text-align: center;
+                }
             }
         }
-    }  
+    }
 }
- 
