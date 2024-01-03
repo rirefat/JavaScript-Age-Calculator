@@ -38,6 +38,46 @@ body{
                 display: flex;
                 align-items: center;
                 justify-content: start;
+
+                input{
+                    flex: 1;
+                    margin-right: 20px;
+                    padding: 14px 20px;
+                    border: 0;
+                    outline: 0;
+                    font-size: 18px;
+                    border-radius: 5px;
+                    position: relative;
+
+                    &::-webkit-calendar-picker-indicator{
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        right: 0;
+                        left: 0;
+                        width: auto;
+                        height: auto;
+                        background-position: calc(100% - 10px);
+                        background-size: 30px;
+                        cursor: pointer;
+                    }
+                }
+
+                button{
+                    background: #EFD81D;
+                    border: 0;
+                    outline: 0;
+                    padding: 15px 30px;
+                    border-radius: 5px;
+                    font-weight: 700;
+                    font-size: 16px;
+                    color: #333;
+                    cursor: pointer;
+
+                    &:hover{
+                        background: #f1e26d;
+                    }
+                }
             }
         }
     }  
