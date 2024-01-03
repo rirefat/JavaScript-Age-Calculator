@@ -71,4 +71,7 @@ body .container .calculator .input-box button {
 }
 body .container .calculator .input-box button:hover {
   background: #f1e26d;
+}
+body .container .calculator h3 {
+  font-weight: 500;
 }/*# sourceMappingURL=style.css.map */
