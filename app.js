@@ -35,8 +35,14 @@ const calculateAge = () => {
         y3--;
     }
 
-    document.getElementById("age").innerText = `Your age is ${y3 > 1 ? `${y3}` + " Years," : y3 == 1 ? `${y3}` + " Year," : ""} ${m3 > 1 ? `${m3}` + " Months," : m3 == 1 ? `${m3}` + " Month," : ""} ${d3 > 1 ? `${d3}` + " Days." : d3 == 1 ? `${d3}` + " Day." : ""}`;
-    console.log(d3, m3, y3);
+
+    if (d3 < 0 && m3 < 0 && y3 < 0) {
+        document.getElementById("age").innerText = "Invalid"
+    }
+    else {
+        document.getElementById("age").innerText = `Your age is ${y3 > 1 ? `${y3}` + " Years," : y3 == 1 ? `${y3}` + " Year," : ""} ${m3 > 1 ? `${m3}` + " Months," : m3 == 1 ? `${m3}` + " Month," : ""} ${d3 > 1 ? `${d3}` + " Days." : d3 == 1 ? `${d3}` + " Day." : ""}`;
+        console.log(d3, m3, y3);
+    }
 }
 
 function getDaysInMonth(year, month) {
