@@ -1,6 +1,6 @@
 # JavaScript Age Calculator
 
-![JavaScript Age Calculator](https://github.com/rirefat/JavaScript-Age-Calculator/img/age-calculator.png)
+![JavaScript Age Calculator](https://github.com/rirefat/JavaScript-Age-Calculator/blob/main/img/age-calculator.png)
 
 ## Overview
 
